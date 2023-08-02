@@ -1,0 +1,15 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "ice.me.emicharacters.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+  ],
+  "client": [
+    "MixinEmiSearch",
+    "MixinJeiSearch"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

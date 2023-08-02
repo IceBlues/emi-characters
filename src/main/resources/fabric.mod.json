@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "emi-characters",
+  "version": "${version}",
+  "name": "emi-characters",
+  "description": "",
+  "authors": [
+    "iceblues7"
+  ],
+  "contact": {},
+  "license": "Apache-2.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ice.me.emicharacters.EmiCharacters"
+    ]
+  },
+  "mixins": [
+    "emi-characters.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
