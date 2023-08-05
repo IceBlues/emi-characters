@@ -8,6 +8,14 @@ group = project.maven_group
 
 repositories {
     maven {
+        name "Modmaven"
+        url "https://modmaven.dev/"
+        // For Gradle 5.1 and above, limit it to just AE2
+        content {
+            includeGroup 'appeng'
+        }
+    }
+    maven {
         name = "TerraformersMC"
         url = "https://maven.terraformersmc.com/"
     }
@@ -30,6 +38,10 @@ dependencies {
     // JEI
     modCompileOnly files("C:\\Users\\luxia\\Downloads\\jei-1.20.1-fabric-15.2.0.23.jar")
     modLocalRuntime files("C:\\Users\\luxia\\Downloads\\jei-1.20.1-fabric-15.2.0.23.jar")
+
+    // AE2
+    modCompileOnly "appeng:appliedenergistics2-fabric:15.0.5-beta"
+    modLocalRuntime "appeng:appliedenergistics2-fabric:15.0.5-beta"
 
     // PinIn
     modImplementation "com.github.Towdium:PinIn:${verpinin}"

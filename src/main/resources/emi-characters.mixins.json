@@ -7,7 +7,9 @@
   ],
   "client": [
     "MixinEmiSearch",
-    "MixinJeiSearch"
+    "MixinJeiSearch",
+    "MixinAE2a",
+    "MixinAE2b"
   ],
   "injectors": {
     "defaultRequire": 1
